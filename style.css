@@ -22,10 +22,19 @@ body {
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    flex-direction:column;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper h3 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
 }
 
 .container {
-    width: 45%;
+    width: 80%;
 }
 
 input {
@@ -37,3 +46,33 @@ input {
     margin-top: 8px;
     padding: 0 10px;
 }
+
+btn-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:nth-child(2) {
+    background-color: #f44336; /* Reset button red */
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
